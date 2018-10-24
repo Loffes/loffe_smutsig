@@ -63,7 +63,7 @@ end)
 
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(1000)
+		Citizen.Wait(5000)
 		if isSmutsig then
 			TriggerServerEvent('loffe_smutsig:sync', GetPlayerServerId(PlayerId()), 'flugor')
 			if TreDMe then
